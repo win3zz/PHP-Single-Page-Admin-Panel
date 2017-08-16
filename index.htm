@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">  
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		<title>News & Announcement</title>
+		
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	</head>
+<body>
+<div class="container">
+	<div class="col-sm-4" style="padding-left:2px;">
+	<div class="panel panel-default" style="margin-bottom:2px;">
+	  <div class="panel-heading"><h3><strong><center>News & Announcement</center></strong></h3></div>
+	  <div class="panel-body" style="height: 250px;">
+		<script> 
+		$(function(){
+		  $("#includedNews").load("news.php");
+		});
+		</script>
+		<!-- NEWS -->
+		<div id="includedNews"></div>
+	  </div>
+	</div>
+</div>
+</body>
+</html>
